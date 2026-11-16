@@ -129,10 +129,14 @@ export default function HomePage() {
               </button>
 
               <button
-                onClick={() => setIsRedisInspectorOpen(true)}
+                onClick={() => (user ? setIsRedisInspectorOpen(true) : setIsRedisInspectorOpen(true))}
                 className="bg-black/80 hover:bg-black text-white text-xs font-mono font-bold px-3.5 py-2 rounded-xl shadow-xs transition flex items-center gap-1.5 cursor-pointer"
               >
-                <span>Redis User State: {user?.phone || '+91 98765 43210'}</span>
+                <span>
+                  {user
+                    ? `Redis DB: ${user.name} (${user.phone})`
+                    : 'Redis DB: Guest Session (Click to inspect)'}
+                </span>
               </button>
             </div>
           </div>

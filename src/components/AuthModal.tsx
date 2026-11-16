@@ -27,9 +27,9 @@ export default function AuthModal() {
   } = useAuth();
 
   const [step, setStep] = useState<'phone' | 'otp' | 'profile'>('phone');
-  const [phoneNumber, setPhoneNumber] = useState('9876543210');
-  const [otp, setOtp] = useState(['4', '8', '2', '9', '1', '0']);
-  const [userName, setUserName] = useState('Priya Sharma');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [otp, setOtp] = useState(['', '', '', '', '', '']);
+  const [userName, setUserName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -79,7 +79,7 @@ export default function AuthModal() {
 
   const handleDemoFill = () => {
     setPhoneNumber('9876543210');
-    setUserName('Priya Sharma');
+    setUserName('Omkar More');
     setOtp(['4', '8', '2', '9', '1', '0']);
     setStep('otp');
   };
@@ -196,7 +196,7 @@ export default function AuthModal() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Priya Sharma"
+                  placeholder="Enter your name (e.g. Omkar More)"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
                   className="w-full px-3 py-2 text-sm border border-zinc-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0C831F]"

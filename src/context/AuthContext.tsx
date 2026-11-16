@@ -23,7 +23,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
-  // Load user from localStorage or auto-create demo user on first visit
+  // Load user from localStorage if previously logged in
   useEffect(() => {
     async function loadInitialUser() {
       try {
@@ -33,29 +33,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           const data = await res.json();
           if (data.user) {
             setUser(data.user);
-            setIsLoading(false);
-            return;
+          } else {
+            localStorage.removeItem('blinkit_user_id');
+            setUser(null);
           }
-        }
-
-        // Initialize with default Blinkit user session in Redis
-        const defaultPhone = '+91 98765 43210';
-        const res = await fetch('/api/user', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            phone: defaultPhone,
-            name: 'Priya Sharma',
-            email: 'priya.sharma@example.com',
-          }),
-        });
-        const data = await res.json();
-        if (data.user) {
-          setUser(data.user);
-          localStorage.setItem('blinkit_user_id', data.user.id);
+        } else {
+          setUser(null);
         }
       } catch (e) {
-        console.error('Failed to init user session', e);
+        console.error('Failed to load user session', e);
+        setUser(null);
       } finally {
         setIsLoading(false);
       }

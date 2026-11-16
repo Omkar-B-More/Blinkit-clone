@@ -180,16 +180,20 @@ export default function Header({
             {/* User Account / Clerk Phone Auth */}
             <button
               onClick={openAuthModal}
-              className="flex items-center gap-2 bg-white/80 hover:bg-white text-black px-3.5 py-2 rounded-xl text-xs font-bold border border-black/10 shadow-xs transition cursor-pointer"
+              className="flex items-center gap-2 bg-white/90 hover:bg-white text-black px-3.5 py-2 rounded-xl text-xs font-bold border border-black/10 shadow-xs transition cursor-pointer"
             >
-              <UserIcon className="w-4 h-4 text-black/70" />
-              <div className="text-left hidden sm:block">
-                <div className="text-black leading-tight">
-                  {user ? user.name.split(' ')[0] : 'Login'}
+              <UserIcon className="w-4 h-4 text-black/70 shrink-0" />
+              <div className="text-left">
+                <div className="text-black font-black leading-tight truncate max-w-[95px] sm:max-w-[130px]">
+                  {user ? user.name : 'Login'}
                 </div>
-                {user && (
-                  <div className="text-[10px] text-[#0C831F] font-semibold">
-                    {user.orderCount} Orders
+                {user ? (
+                  <div className="text-[10px] text-[#0C831F] font-semibold hidden sm:block">
+                    {user.orderCount} {user.orderCount === 1 ? 'Order' : 'Orders'}
+                  </div>
+                ) : (
+                  <div className="text-[10px] text-zinc-500 font-medium hidden sm:block">
+                    My Account
                   </div>
                 )}
               </div>
