@@ -1,0 +1,39 @@
+{
+  "user:usr_1794815285818_718": {
+    "id": "usr_1794815285818_718",
+    "phone": "+91 98765 43210",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "orderCount": "3",
+    "totalSpent": "299",
+    "addresses": "[{\"id\":\"addr_default\",\"label\":\"Home\",\"flat\":\"Flat 402, Green Glen Apartments\",\"street\":\"Outer Ring Road, Bellandur\",\"area\":\"Bellandur\",\"city\":\"Bengaluru\",\"pincode\":\"560103\",\"landmark\":\"Near Central Mall\"}]",
+    "createdAt": "2026-11-16T07:48:05.818Z",
+    "lastActive": "2026-11-16T08:12:31.221Z"
+  },
+  "phone:+91 98765 43210": "usr_1794815285818_718",
+  "order:blk_311460_469": "{\"id\":\"blk_311460_469\",\"userId\":\"usr_1794815285818_718\",\"items\":[{\"quantity\":2,\"product\":{\"id\":\"prod-milk-amul-taaza\",\"category\":\"dairy\",\"brand\":\"Amul\",\"image\":\"https://images.unsplash.com/photo-1550583724-b2692b85b150\",\"mrp\":28,\"name\":\"Amul Taaza Homogenised Toned Milk\",\"stockCount\":42,\"price\":27,\"description\":\"Pasteurised toned milk\",\"reviewsCount\":1420,\"shelfLife\":\"2 Days\",\"isVeg\":true,\"rating\":4.8,\"discountPercentage\":4,\"inStock\":true,\"weight\":\"500 ml\"}}],\"itemTotal\":54,\"deliveryFee\":25,\"handlingFee\":5,\"rainSurgeFee\":0,\"tipAmount\":20,\"totalAmount\":104,\"status\":\"placed\",\"deliveryAddress\":{\"id\":\"addr_default\",\"label\":\"Home\",\"flat\":\"Flat 402, Green Glen Apartments\",\"street\":\"Outer Ring Road, Bellandur\",\"area\":\"Bellandur\",\"city\":\"Bengaluru\",\"pincode\":\"560103\",\"landmark\":\"Near Central Mall\"},\"deliveryOtp\":\"1885\",\"darkStoreName\":\"Blinkit Dark Store #042 (Bellandur Hub - 1.2 km)\",\"rider\":{\"name\":\"Rajesh Kumar\",\"phone\":\"+91 98234 11203\",\"rating\":4.9,\"totalDeliveries\":4210,\"vehicleNumber\":\"KA 03 HM 4812\",\"vehicleModel\":\"Hero Electric Nyx Super\",\"photo\":\"https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80\",\"currentLat\":12.9352,\"currentLng\":77.6245},\"createdAt\":\"2026-11-16T07:48:31.460Z\",\"estimatedDeliveryTimeMinutes\":10,\"elapsedSeconds\":0}",
+  "user:usr_1794815285818_718:orders": [
+    "blk_771930_952",
+    "blk_739630_951",
+    "blk_311460_469"
+  ],
+  "store:orders:queue": [
+    "blk_771930_952",
+    "blk_739630_951",
+    "blk_311460_469"
+  ],
+  "order:blk_739630_951": "{\"id\":\"blk_739630_951\",\"userId\":\"usr_1794815285818_718\",\"items\":[{\"product\":{\"id\":\"prod-milk-amul-taaza\",\"name\":\"Amul Taaza Homogenised Toned Milk\",\"category\":\"dairy\",\"weight\":\"500 ml\",\"price\":27,\"mrp\":28,\"discountPercentage\":4,\"inStock\":true,\"stockCount\":42,\"image\":\"https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&auto=format&fit=crop&q=80\",\"description\":\"Pouch packed pasteurised toned milk with 3.0% fat and 8.5% SNF. Sourced from local farmers, packed untouched by human hands.\",\"brand\":\"Amul\",\"shelfLife\":\"2 Days from packing\",\"isVeg\":true,\"rating\":4.8,\"reviewsCount\":1420,\"keyFeatures\":[\"Pasteurised & Homogenised\",\"Rich in Calcium & Protein\",\"Directly chilled from dairy\"],\"unitType\":\"Pouch\"},\"quantity\":3}],\"itemTotal\":81,\"deliveryFee\":25,\"handlingFee\":5,\"rainSurgeFee\":0,\"tipAmount\":0,\"totalAmount\":111,\"status\":\"placed\",\"deliveryAddress\":{\"id\":\"addr_default\",\"label\":\"Home\",\"flat\":\"Flat 402, Green Glen Apartments\",\"street\":\"Outer Ring Road, Bellandur\",\"area\":\"Bellandur\",\"city\":\"Bengaluru\",\"pincode\":\"560103\",\"landmark\":\"Near Central Mall\"},\"deliveryOtp\":\"8539\",\"darkStoreName\":\"Blinkit Dark Store #042 (Bellandur Hub - 1.2 km)\",\"rider\":{\"name\":\"Suresh Verma\",\"phone\":\"+91 97120 44589\",\"rating\":4.8,\"totalDeliveries\":3150,\"vehicleNumber\":\"DL 4S BN 9012\",\"vehicleModel\":\"Ather 450X Quick Hub\",\"photo\":\"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80\",\"currentLat\":12.937,\"currentLng\":77.627},\"createdAt\":\"2026-11-16T08:12:19.630Z\",\"estimatedDeliveryTimeMinutes\":10,\"elapsedSeconds\":0}",
+  "order:blk_771930_952": "{\"id\":\"blk_771930_952\",\"userId\":\"usr_1794815285818_718\",\"items\":[{\"product\":{\"id\":\"prod-milk-mother-dairy\",\"name\":\"Mother Dairy Toned Fresh Milk\",\"category\":\"dairy\",\"weight\":\"500 ml\",\"price\":27,\"mrp\":28,\"discountPercentage\":4,\"inStock\":true,\"stockCount\":18,\"image\":\"https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500&auto=format&fit=crop&q=80\",\"description\":\"Nutritious toned milk with wholesome taste and natural calcium. Fortified with Vitamins A and D.\",\"brand\":\"Mother Dairy\",\"shelfLife\":\"2 Days\",\"isVeg\":true,\"rating\":4.7,\"reviewsCount\":890,\"keyFeatures\":[\"Fortified with Vitamin A & D\",\"No added preservatives\",\"Micro-filtered for freshness\"],\"unitType\":\"Pouch\"},\"quantity\":2}],\"itemTotal\":54,\"deliveryFee\":25,\"handlingFee\":5,\"rainSurgeFee\":0,\"tipAmount\":0,\"totalAmount\":84,\"status\":\"placed\",\"deliveryAddress\":{\"id\":\"addr_default\",\"label\":\"Home\",\"flat\":\"Flat 402, Green Glen Apartments\",\"street\":\"Outer Ring Road, Bellandur\",\"area\":\"Bellandur\",\"city\":\"Bengaluru\",\"pincode\":\"560103\",\"landmark\":\"Near Central Mall\"},\"deliveryOtp\":\"3285\",\"darkStoreName\":\"Blinkit Dark Store #042 (Bellandur Hub - 1.2 km)\",\"rider\":{\"name\":\"Rajesh Kumar\",\"phone\":\"+91 98234 11203\",\"rating\":4.9,\"totalDeliveries\":4210,\"vehicleNumber\":\"KA 03 HM 4812\",\"vehicleModel\":\"Hero Electric Nyx Super\",\"photo\":\"https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80\",\"currentLat\":12.9352,\"currentLng\":77.6245},\"createdAt\":\"2026-11-16T08:12:51.930Z\",\"estimatedDeliveryTimeMinutes\":10,\"elapsedSeconds\":0}",
+  "user:usr_1794817227554_557": {
+    "id": "usr_1794817227554_557",
+    "phone": "+91 7506500529",
+    "name": "Omkar More",
+    "email": "",
+    "orderCount": "0",
+    "totalSpent": "0",
+    "addresses": "[{\"id\":\"addr_default\",\"label\":\"Home\",\"flat\":\"Flat 402, Green Glen Apartments\",\"street\":\"Outer Ring Road, Bellandur\",\"area\":\"Bellandur\",\"city\":\"Bengaluru\",\"pincode\":\"560103\",\"landmark\":\"Near Central Mall\"}]",
+    "createdAt": "2026-11-16T08:20:27.554Z",
+    "lastActive": "2026-11-16T08:20:27.554Z"
+  },
+  "phone:+91 7506500529": "usr_1794817227554_557"
+}
